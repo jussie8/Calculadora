@@ -10,18 +10,26 @@
 
 <body>
     <h1>Lista de Compra</h1>
-<label>item:</label>
+<label>Item:</label>
 <input type="text" id="item">
 <button onclick="adicionaritem()">adicionar</button>
-<p id="respota"></p>
+<p id="resposta"></p>
+<label>Retirar Último Item</label>
+<button onclick="retiraritem()">Retirar </button>
+
+<h2>Agenda de Espera</h2>
 
     <script>
         let Lista = [ 'Arroz' , 'Feijão'];
-        respota.innerHTML = Lista;
+        resposta.innerHTML = Lista;
 
         function adicionaritem() {
             Lista.push(item.value);
-            respota.innerHTML = Lista
+            resposta.innerHTML = Lista
+        }
+        function retiraritem(){
+            Lista.pop(item.value);
+            resposta.innerHTML = Lista
         }
     </script>
     
