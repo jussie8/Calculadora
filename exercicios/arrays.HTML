@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compra</title>
+</head>
+
+
+
+<body>
+    <h1>Lista de Compra</h1>
+<label>item:</label>
+<input type="text" id="item">
+<button onclick="adicionaritem()">adicionar</button>
+<p id="respota"></p>
+
+    <script>
+        let Lista = [ 'Arroz' , 'Feijão'];
+        respota.innerHTML = Lista;
+
+        function adicionaritem() {
+            Lista.push(item.value);
+            respota.innerHTML = Lista
+        }
+    </script>
+    
+</body>
+
+</html>
