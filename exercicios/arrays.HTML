@@ -14,10 +14,15 @@
 <input type="text" id="item">
 <button onclick="adicionaritem()">adicionar</button>
 <p id="resposta"></p>
+<p id="Excluido"></p>
+
 <label>Retirar Último Item</label>
 <button onclick="retiraritem()">Retirar </button>
 
 <h2>Agenda de Espera</h2>
+
+
+
 
     <script>
         let Lista = [ 'Arroz' , 'Feijão'];
@@ -31,6 +36,10 @@
             Lista.pop(item.value);
             resposta.innerHTML = Lista
         }
+            let fila = ['Maria' , 'Joao' , 'Regina' , 'Igor'];
+            Excluido.innerHTML = fila;
+
+        
     </script>
     
 </body>
